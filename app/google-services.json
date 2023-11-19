@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "911427503977",
+    "project_id": "login-registration-e20c6",
+    "storage_bucket": "login-registration-e20c6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:911427503977:android:8a8d5cb87601d85ca59ff8",
+        "android_client_info": {
+          "package_name": "com.example.popularmoviesattempt2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsgfsgh-v9qvjcpny0TeuTrAnfvzjDcvA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

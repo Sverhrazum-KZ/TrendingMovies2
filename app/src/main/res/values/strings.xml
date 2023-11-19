@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">PopularMoviesAttempt2</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="click_to_login">Click to login</string>
+    <string name="click_to_register">Click to register</string>
+    <string name="logout">Logout</string>
+    <string name="api_key">6e9ffacfbd27705fa7588e5288d2837c</string>
+</resources>
