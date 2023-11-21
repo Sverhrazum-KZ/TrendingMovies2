@@ -26,32 +26,28 @@ class MainActivity : AppCompatActivity() {
 
         for (i in 1..20) {
             //До этого была такая строка data.add(ItemsViewModel(R.drawable.common_full_open_on_phone, "Item " + i))
-            data.add(
-                ItemsViewModel(
-                    com.google.android.gms.base.R.drawable.common_full_open_on_phone,
-                    "Item " + i
-                )
-            )
+            data.add(ItemsViewModel(com.google.android.gms.base.R.drawable.common_full_open_on_phone,"Item " + i))
         }
 
-        val adapter = CustomAdapter(data)
-
-        recyclerView.adapter = adapter
-
-
-        val apiInterface = ApiInterface.create().getMovies("6e9ffacfbd27705fa7588e5288d2837c")
+        val apiInterface = ApiInterface.create().getMovies("c2c607cbe47210dc3704d1598c983e43")
 
         //apiInterface.enqueue( Callback<List<Movie>>())
         apiInterface.enqueue(object : Callback<Movies> {
-            override fun onResponse(call: Call<Movies>?, response: Response<Movies>?) {
-                Log.d("testLogs", "OnResponse Success ${response?.body()?.results}")
+            override fun onResponse(call: Call<Movies>?,response: Response<Movies>?) {
+                Log.d("testLogs", "onResponse Success ${response?.body()?.results}")
                 /*if(response?.body() != null)
                     recyclerAdapter.setMovieListItems(response.body()!!)*/
+
+                val adapter = CustomAdapter(response?.body()?.results)
+
+                recyclerView.adapter = adapter
             }
 
             override fun onFailure(call: Call<Movies>?, t: Throwable?) {
-                Log.d("testLogs", "onFailure : ${t?.message}")
+                Log.d("testLogs", "onResponse Failure: ${t?.message}")
+
             }
         })
-    }
-}
+
+    }//)
+}//}
