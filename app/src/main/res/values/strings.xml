@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">PopularMoviesAttempt2</string>
+    <string name="app_name">Trending Movies</string>
     <string name="login">Login</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
@@ -7,5 +7,5 @@
     <string name="click_to_login">Click to login</string>
     <string name="click_to_register">Click to register</string>
     <string name="logout">Logout</string>
-    <string name="api_key">6e9ffacfbd27705fa7588e5288d2837c</string>
+    <string name="api_key">c2c607cbe47210dc3704d1598c983e43</string>
 </resources>
